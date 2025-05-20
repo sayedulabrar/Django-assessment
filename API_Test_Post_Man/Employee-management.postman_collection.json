@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "5b1fed1b-e3cf-48d8-9a5a-6612bea2b972",
+		"name": "Employee-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25933462"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"sayedul@gmail.com\",\r\n  \"password\": \"password123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/signup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"sayedul@gmail.com\",\r\n  \"password\": \"password123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NzA1ODk0LCJpYXQiOjE3NDc3MDU1OTQsImp0aSI6IjdiZjVkOTIzMzQ2MDRjOGNiNjdjMzUwYzE5MGE2NjgwIiwidXNlcl9pZCI6MX0.H9u28-L5X5yeZLDcTZOYmQZFNCwLCBXYli-a73t5ITo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Employer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NzA1ODk0LCJpYXQiOjE3NDc3MDU1OTQsImp0aSI6IjdiZjVkOTIzMzQ2MDRjOGNiNjdjMzUwYzE5MGE2NjgwIiwidXNlcl9pZCI6MX0.H9u28-L5X5yeZLDcTZOYmQZFNCwLCBXYli-a73t5ITo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"company_name\": \"Tech Corp\",\r\n  \"contact_person_name\": \"John Doe\",\r\n  \"email\": \"contact@techcorp.com\",\r\n  \"phone_number\": \"1234567890\",\r\n  \"address\": \"123 Main St, City\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employers/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Employers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NzA1ODk0LCJpYXQiOjE3NDc3MDU1OTQsImp0aSI6IjdiZjVkOTIzMzQ2MDRjOGNiNjdjMzUwYzE5MGE2NjgwIiwidXNlcl9pZCI6MX0.H9u28-L5X5yeZLDcTZOYmQZFNCwLCBXYli-a73t5ITo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Employers_by_id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NzA1ODk0LCJpYXQiOjE3NDc3MDU1OTQsImp0aSI6IjdiZjVkOTIzMzQ2MDRjOGNiNjdjMzUwYzE5MGE2NjgwIiwidXNlcl9pZCI6MX0.H9u28-L5X5yeZLDcTZOYmQZFNCwLCBXYli-a73t5ITo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"company_name\": \"Tech Corp\",\r\n  \"contact_person_name\": \"John Cena\",\r\n  \"email\": \"contact@techcorp.com\",\r\n  \"phone_number\": \"1234567890\",\r\n  \"address\": \"123 Main St, City, Bangladesh\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employers/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employers",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employers",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NzA1ODk0LCJpYXQiOjE3NDc3MDU1OTQsImp0aSI6IjdiZjVkOTIzMzQ2MDRjOGNiNjdjMzUwYzE5MGE2NjgwIiwidXNlcl9pZCI6MX0.H9u28-L5X5yeZLDcTZOYmQZFNCwLCBXYli-a73t5ITo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employers/4/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employers",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NzA1ODk0LCJpYXQiOjE3NDc3MDU1OTQsImp0aSI6IjdiZjVkOTIzMzQ2MDRjOGNiNjdjMzUwYzE5MGE2NjgwIiwidXNlcl9pZCI6MX0.H9u28-L5X5yeZLDcTZOYmQZFNCwLCBXYli-a73t5ITo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0Nzc5Mzc2MCwiaWF0IjoxNzQ3NzA3MzYwLCJqdGkiOiJlZGU0Y2E5OWYzMmM0ZGZhYjZhZjMxZjVhMjJjMjVhZiIsInVzZXJfaWQiOjF9.mic2UnYXwUrGkBrXPbhPSu6Qcq4887lipeTKdd4Y4XI\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/logout/?Content-Type=application/json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"logout",
+						""
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

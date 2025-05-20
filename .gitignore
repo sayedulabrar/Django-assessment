@@ -29,9 +29,6 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Postman (optional: don't track personal workspace files)
-*.postman_collection.json
-
 # Migrations (optional: depends on your team/project setup)
 **/migrations/*.py
 !**/migrations/__init__.py

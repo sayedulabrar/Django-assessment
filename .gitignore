@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Django
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# Environment
+.env
+.env.*
+
+# Virtual Environment
+env/
+venv/
+ENV/
+.venv/
+
+# VS Code / PyCharm / IDE settings
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Postman (optional: don't track personal workspace files)
+*.postman_collection.json
+
+# Migrations (optional: depends on your team/project setup)
+**/migrations/*.py
+!**/migrations/__init__.py
